@@ -1,17 +1,26 @@
 const container = document.getElementById('container');
 
-let r = prompt("How many rows?");
-let c = prompt("How many columns?");
+// function makeRowsSmall(rows, cols) {
+//     container.style.setProperty('--grid-rows', rows);
+//     container.style.setProperty('--grid-cols', cols); 
+//     for (let c = 0; c < (rows * cols); c++) {
+//         let cell = document.createElement("div");
+//         cell.innerText = (c + 1);
+//         container.appendChild(cell).className = "grid-item";
+//     };
+// };
 
-function makeRows(rows, cols) {
-    container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols); 
-    for (let c = 0; c < (rows * cols); c++) {
-        let cell = document.createElement("div");
-        cell.innerText = ("pants");
-        // (c + 1);
-        container.appendChild(cell).className = "grid-item";
-    };
-};
+// const black = document.querySelector('black');
+// black.addEventListener('mouseover', () => {
+//     document.grid-item.body.style.backgroundColor; '#000000';
+// })
 
-makeRows(r, c);
+// makeRowsSmall(16, 16);
+
+
+function createGrid (gridCount) {
+
+}
+
+const gridInput = document.querySelectorAll('button');
+gridCount = gridCount;
