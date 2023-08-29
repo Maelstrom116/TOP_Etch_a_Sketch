@@ -3,8 +3,12 @@
     --grid-rows: 1;
 }
 
+body {
+    background-color: lightblue;
+}
+
 #selection-container {
-    display: grid;
+    display: flex;
     flex-direction: column;
     margin-bottom: 2em;
 }
@@ -16,18 +20,9 @@
 }
 
 #container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    display: flex;
+    text-align: center;
+    vertical-align: center;
     width: 400px;
     height: 400px;
-    justify-content: center;
-    justify-self: center;
-}
-
-#grid-item {
-    padding: .25em;
-    border: 2px solid #000000;
-    text-align: center;
 }
