@@ -10,33 +10,39 @@ function sizeSelected () {
         size = (button.id);
         numSize = parseInt(size);
         makeGrid();
-        // console.log(numSize);
-        // console.log(typeof(numSize));
         })
-      })
+      })     
   }
-
 
 function makeGrid() {
   for(let i = 0; i < numSize; i++) {
-    let row = document.createElement('grid-item');
+    let row = document.createElement('grid-row');
     for(let j = 0; j < numSize; j++) {
-      let cell = document.createElement('grid-item');
+      let cell = document.createElement('grid-cell');
       cell.style.minWidth = "25px";
       cell.style.minHeight = "25px";
-      cell.style.background = "yellow";
       cell.style.display = "inline-block";
-      cell.innerText = (".");
-      cell.style.border = ".5px solid #000000";
+      // cell.style.border = ".5px solid #000000";
       row.appendChild(cell);
-      hoverColor();
     }
     document.getElementById('container').appendChild(row);
   }
+  hoverColor();
+  document.getElementById('16').disabled = true;
+  document.getElementById('32').disabled = true;
+  document.getElementById('64').disabled = true;
 }
 
+const clear = document.querySelector('#clear');
+  clear.addEventListener('click', () => {
+    document.getElementById('16').disabled = false;
+    document.getElementById('32').disabled = false;
+    document.getElementById('64').disabled = false;
+    location.reload();
+  })
+
 function hoverColor (){
-  let items = document.querySelectorAll('grid-item');
+  let items = document.querySelectorAll('grid-row' && 'grid-cell');
   items.forEach (item => {
     item.addEventListener ('mouseover', () => {
       item.style.backgroundColor = 'black';

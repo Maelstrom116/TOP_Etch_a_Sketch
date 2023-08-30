@@ -23,6 +23,7 @@ body {
     display: flex;
     text-align: center;
     vertical-align: center;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 25%;
+    max-height: 25%;
+    background-color: lightblue;
 }
