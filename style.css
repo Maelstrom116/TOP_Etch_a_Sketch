@@ -23,7 +23,21 @@ body {
     display: flex;
     text-align: center;
     vertical-align: center;
-    max-width: 25%;
-    max-height: 25%;
+    padding: 0;
+    margin: 0;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
     background-color: lightblue;
+}
+
+.grid-row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-col {
+    padding: 0px;
+    margin: 0px;
 }
