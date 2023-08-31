@@ -5,6 +5,7 @@
 
 body {
     background-color: lightblue;
+    margin: auto;
 }
 
 #selection-container {
@@ -19,25 +20,18 @@ body {
     justify-content: center;
 }
 
+/* .container-wrapper {
+    height: 75vw;
+    width: 75vw;
+    max-height: var(--content-width);;
+    max-width: var(--content-height);
+    position: relative;
+} */
+
 #container {
     display: flex;
-    text-align: center;
-    vertical-align: center;
-    padding: 0;
-    margin: 0;
-    min-width: 500px;
-    min-height: 500px;
-    max-width: 500px;
-    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-color: lightblue;
-}
-
-.grid-row {
-    padding: 0px;
-    margin: 0px;
-}
-
-.grid-col {
-    padding: 0px;
-    margin: 0px;
 }
